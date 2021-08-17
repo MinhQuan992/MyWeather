@@ -1,0 +1,36 @@
+<div class="tm-row pt-4">
+    <div class="tm-col-left">
+        <div class="tm-site-header media">
+            <i class="fas fa-umbrella-beach fa-3x mt-1 tm-logo"></i>
+            <div class="media-body">
+                <h1 class="tm-sitename text-uppercase">myweather</h1>
+                <p class="tm-slogon">an easy way to get weather forecasts</p>
+            </div>        
+        </div>
+    </div>
+    <div class="tm-col-right">
+        <nav class="navbar navbar-expand-lg" id="tm-main-nav">
+            <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
+                data-toggle="collapse" data-target="#navbar-nav" 
+                aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                <ul class="navbar-nav text-uppercase">
+                    <li class="nav-item {{ternary page 'index' 'active'}}">
+                        <a class="nav-link tm-nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item {{ternary page 'about' 'active'}}">
+                        <a class="nav-link tm-nav-link" href="about">About</a>
+                    </li>
+                    <li class="nav-item {{ternary page 'services' 'active'}}">
+                        <a class="nav-link tm-nav-link" href="services">Services</a>
+                    </li>                            
+                    <li class="nav-item {{ternary page 'contact' 'active'}}">
+                        <a class="nav-link tm-nav-link" href="contact">Contact</a>
+                    </li>
+                </ul>                            
+            </div>                        
+        </nav>
+    </div>
+</div>

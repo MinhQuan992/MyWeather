@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyWeather | About</title>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+<!--
+
+TemplateMo 550 Diagoona
+
+https://templatemo.com/tm-550-diagoona
+
+-->
+</head>
+
+<body>
+    <div class="tm-container">        
+        <div>
+            {{>header}}
+            
+            <div class="tm-row">
+                <div class="tm-col-left"></div>
+                <main class="tm-col-right">
+                    <section class="tm-content tm-about">
+                        <h2 class="mb-5 tm-content-title">About MyWeather</h2>
+                        <hr class="mb-4">
+                        <div class="media my-3">
+                            <i class="fas fa-cloud-sun-rain fa-3x p-3 mr-4"></i>
+                            <div class="media-body">
+                                <p>MyWeather is a website that helps you get weather forecasts easily. Just enter a location and click "Search".</p>
+                            </div> 
+                        </div>
+                        <div class="media my-3">
+                            <i class="fas fa-tools fa-3x p-3 mr-4"></i>
+                            <div class="media-body">
+                                <p>MyWeather is using Mapbox's Geocoding API and Weatherstack's API.</p>
+                            </div> 
+                        </div>
+                        <div class="media my-3">
+                            <i class="far fa-lightbulb fa-3x p-3 mr-4"></i>
+                            <div class="media-body">
+                                <p>Created by Vo Tran Minh Quan as a project of The Complete Node.js Developer Course (3rd Edition) on Udemy.</p>
+                            </div> 
+                        </div>                 
+                    </section>
+                </main>
+            </div>
+        </div>        
+
+        {{>footer}}
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyWeather | Home</title>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+<!--
+
+TemplateMo 550 Diagoona
+
+https://templatemo.com/tm-550-diagoona
+
+-->
+</head>
+
+<body>
+    <div class="tm-container">        
+        <div>
+            {{>header}}
+
+            <div class="tm-row">
+                <div class="tm-col-left">
+                    <form id="form-search" style="margin-top: 8%">
+                        <h2 class="mb-5 tm-content-title">Provide a location here</h2>
+                        <input id="text-location" type="text" placeholder="Provide a location" required>
+                        <input id="button-search" type="submit" value="Search">
+                    </form>
+                </div>
+                <main class="tm-col-right">
+                    <section class="tm-content">
+                        <h2 id="label-location" class="mb-5 tm-content-title">MyWeather</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img id="weather-icon" src="https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0002_sunny_intervals.png">
+                                    </td>
+                                    <td>
+                                        <h2 id="temperature">30&deg;C</h2>
+                                    </td>
+                                    <td>
+                                        <ul id="list">
+                                            <li id="wind-speed">Wind</li>
+                                            <li id="precip">Precip</li>
+                                            <li id="pressure">Pressure</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <p id="weather-describe">Cloudy</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </main>
+            </div>
+        </div>   
+
+        {{>footer}}
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
